@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaijaJollof by Debbie Osarogiuwa! 🥘</title>
+    <style>
+      body {
+        background: #f39f59;
+      }
+      h1 {
+        text-align: center;
+        color: #4e2db7;
+      }
+      h2 {
+        text-align: center;
+        color: #9d44c0;
+        border: 1px solid #4e2db7;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #4e2db7;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0px;
+        cursor: pointer;
+      }
+      .get-recipe {
+        text-decoration: none;
+        color: #4e2db7;
+        font-size: 12px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+      .get-recipe:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>An African Delicacy</h1>
+      <h2>Naija Jollof</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/174/original/141417F8-58A2-44C9-99F3-7658F1767290.jpg?1695596166"
+        alt="naija jollof"
+      />
+      <p>
+        <strong>Nigerian jollof rice recipe!</strong> This African dish is
+        packed full of flavor, rich, grainy, smoky, delicious, and the best.
+        It's a one-pot dish that is made with rice, tomato, peppers, herbs, and
+        spices. Learn how to make jollof rice in easy steps.
+      </p>
+      <a
+        href="https://www.recipevibes.com/nigerian-jollof-rice-recipe/"
+        target="_blank"
+        class="get-recipe"
+      >
+        👉 Get Recipe
+      </a>
+      <button class="order-button">Order Naija Jollof</button>
+      <p class="footer">This page was built by Debbie Osarogiuwa</p>
+    </div>
+    <script>
+      function order() {
+        let name = prompt("What is Your Name?");
+        let email = prompt("What is Your Email Address?");
+        let order = prompt("How many bowls would you like to order?");
+        let location = prompt("Where are you located?");
+        if (location === "London" || location === "Milton Keynes") {
+          alert("We deliver to your area!");
+        } else {
+          alert("Sorry, We do not deliver to your area!");
+        }
+      }
+      let orderButton = document.querySelector(".order-button");
+      orderButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>
